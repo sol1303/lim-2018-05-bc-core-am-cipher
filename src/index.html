@@ -2,11 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale=no">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
+    <h1>Bienvenid@ a Cipher Caesar</h1>
+    <h3>Instrucciones:</h3>
+    <ol>
+      <li>En <strong>Mensaje</strong> escribe el texto de desees codificar.</li>
+      <li>En <strong>Offset</strong> pondrás el número que quieras que las letras cambien.</li>
+      <li>Has click en el botón y ¡listo! <br> El número que sale al inicio seguido de un guión será el número <br>
+      que elegiste para mover las letras.</li>
+      <li>Copia y pega el mensaje codificado y mándalo a tus amigos.</li>
+    </ol>
+    <p> <!--Campo de número-->
+      <label for="number">Offset:</label>
+      <input type="number" name="number" id="number" min=1>
+    </p>
+    <p> <!---Campo de texto-->
+      <label for="textarea">Mensaje:</label>
+      <input type="textarea" id="message" value="Escribe tu mensaje">
+    </p>
+
+    <button id="ButtonCode">Codifícalo</button>
+    <button id="ButtonDecode">Decodifícalo</button>
+
+    <p id=answer></p>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
