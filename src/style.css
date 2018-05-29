@@ -1,59 +1,52 @@
-.start {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #b30059;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    position: absolute;
-    left: 30%;
-    top: 50%;
-    font-family: 'Sunflower', sans-serif;
-
+a.btn-encode{
+  display: inline-block;
+  padding:0.3em 1.2em;
+  border-radius:2em;
+  text-decoration:none;
+  font-size: 2em;
+  font-family:'Roboto',sans-serif;
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+  margin-left: 30%;
+  margin-top: 20%;  
   }
-  
-  .start:hover {background-color: #800040}
-  
-  .start:active {
-    background-color: #800040;
-    box-shadow: 0 5px #666;
-    transform: translateX(4px);
+a.btn-encode:hover{
+  background-color:#45d640;
+    }
+@media all and (max-width:30em){
+a.btn-encode{
+  display:block;
+  margin:0.2em auto;
+   }
   }
 
-  .startTwo {
-    padding: 15px 25px;
-    font-size: 24px;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #b30059;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-family: 'Sunflower', sans-serif;
-
-  }
-  
-  .startTwo:hover {background-color: #800040}
-  
-  .startTwo:active {
-    background-color: #800040;
-    box-shadow: 0 5px #666;
-    transform: translateX(4px);
+  a.btn-decode{
+  display: inline-block;
+  padding:0.3em 1.2em;
+  border-radius:2em;
+  text-decoration:none;
+  font-size: 2em;
+  font-family:'Roboto',sans-serif;
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+    }
+  a.btn-decode:hover{
+  background-color:#45d640;
+      }
+  @media all and (max-width:30em){
+  a.btn-decode{
+  display:block;
+  margin:0.2em auto;
+   }
   }
 
 .content {
-    background: url(image/background_index.jpg);
-    background-repeat: no-repeat;
-    width:90%; 
-    height:100%;
-    background-size: cover;
+  background: url(image/background_index2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
 }

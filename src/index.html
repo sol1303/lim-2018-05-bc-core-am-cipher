@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="content">
     <div id="root"></div>
-    <button id="start" class="start">Codificar</button>
-    <button id="startTwo" class="startTwo">Decodificar</button>
+    <a class="btn-encode" id="start">Codificas</a>
+    <a class="btn-decode" id="startTwo">Decodificar</a>
     <div id= "instructions" class="page" style="display: none">
     <h2>¡Codifíca aquí!</h2>
     <h3>Instrucciones:</h3>
@@ -22,7 +22,7 @@
     </ol>
     <p> <!--Campo de número-->
       <label for="number">Offset:</label>
-      <input type="number" name="number" id="number" min=1 value="1">
+      <input type="number" name="number" id="number" min=0 value="0">
     </p>
     <p> <!---Campo de texto-->
       <label for="textarea">Mensaje:</label>
@@ -44,7 +44,7 @@
     </ol>
     <p> <!--Campo de número-->
       <label for="number">Offset:</label>
-      <input type="number" name="number" id="numberTwo" min=1 value="1">
+      <input type="number" name="number" id="numberTwo" min=0 value="1">
     </p>
     <p> <!---Campo de texto-->
       <label for="textarea">Mensaje:</label>
