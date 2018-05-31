@@ -1,17 +1,28 @@
-const code = document.getElementById('start')
-const decode = document.getElementById('startTwo')
+const encodeButton = document.getElementById('start')
+const decodeButton = document.getElementById('startTwo')
 const show = document.getElementById('instructions')
 const showTwo = document.getElementById('instructionsTwo')
+const encode = document.getElementById('ButtonCode')
+const decode = document.getElementById('ButtonDecode')
 
-
-code.addEventListener('click', function(){
+encodeButton.addEventListener('click', () => {
     show.style.display= '';
-    code.style.display= 'none';
-    decode.style.display= 'none';
+    encodeButton.style.display= 'none';
+    decodeButton.style.display= 'none';
   });
+encode.addEventListener('click', () => {
+  let string = document.getElementById('message').value;
+  let offset = document.getElementById('number').value;
+  document.getElementById('answer').innerHTML =offset + ' - ' + cipher.encode(offset, string);
+})
 
-decode.addEventListener('click', function(){
+decodeButton.addEventListener('click', () => {
     showTwo.style.display= '';
-    code.style.display= 'none';
-    decode.style.display= 'none';
+    encodeButton.style.display= 'none';
+    decodeButton.style.display= 'none';
 });
+decode.addEventListener('click', () => {
+  let string = document.getElementById('messageTwo').value;
+  let offset = document.getElementById('numberTwo').value;
+  document.getElementById('answer').innerHTML = cipher.decode(offset, string);
+})
