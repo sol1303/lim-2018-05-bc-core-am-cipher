@@ -8,8 +8,10 @@
   </head>
   <body class="content">
     <div id="root"></div>
-    <a class="btn-encode" id="start">Codificas</a>
-    <a class="btn-decode" id="startTwo">Decodificar</a>
+    <div id="buttons">
+    <button id="start">Codificas</button>
+    <button id="startTwo">Decodificar</button>
+    </div>
     <div id= "instructions" class="page" style="display: none">
     <h2>¡Codifíca aquí!</h2>
     <h3>Instrucciones:</h3>
@@ -22,7 +24,7 @@
     </ol>
     <p> <!--Campo de número-->
       <label for="number">Offset:</label>
-      <input type="number" name="number" id="number" min=0 value="0">
+      <input type="number" name="number" id="number" min="0" value="0">
     </p>
     <p> <!---Campo de texto-->
       <label for="textarea">Mensaje:</label>
@@ -31,7 +33,7 @@
 
     <button id="ButtonCode">Codifícalo</button>
 
-    <p id=answer></p>
+    <p id="answer"></p>
   </div>
   <div id= "instructionsTwo" style="display: none">
     <h2>Bienvenid@ a Cipher Caesar</h2>
@@ -39,12 +41,12 @@
     <ol>
       <li>En <strong>Mensaje</strong> escribe el texto que te enviaron codificado sin guión.</li>
       <li>En <strong>Offset</strong> pondrás el número que está al inicio antes del guión sin guión.</li>
-      <li>Has click en el botón y ¡listo! <br>
+      <li>Has click en el botón y ¡listo!</li> <br>
       <li>Lee el mensaje decodificado y empieza denuevo.</li>
     </ol>
     <p> <!--Campo de número-->
       <label for="number">Offset:</label>
-      <input type="number" name="number" id="numberTwo" min=0 value="1">
+      <input type="number" name="number" id="numberTwo" min="0" value="1">
     </p>
     <p> <!---Campo de texto-->
       <label for="textarea">Mensaje:</label>
@@ -52,7 +54,7 @@
     </p>
     <button id="ButtonDecode">Decodifícalo</button>
 
-    <p id=answerTwo></p>
+    <p id="answerTwo"></p>
   </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

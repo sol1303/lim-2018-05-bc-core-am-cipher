@@ -5,7 +5,7 @@ document.getElementById('start').addEventListener('click', () => {
   });
   document.getElementById('ButtonCode').addEventListener('click', () => {
   let string = document.getElementById('message').value;
-  let offset = document.getElementById('number').value;
+  let offset = parseInt(document.getElementById('number').value);
   document.getElementById('answer').innerHTML =offset + ' - ' + cipher.encode(offset, string);
 })
 
@@ -16,6 +16,6 @@ document.getElementById('startTwo').addEventListener('click', () => {
 });
 document.getElementById('ButtonDecode').addEventListener('click', () => {
   let string = document.getElementById('messageTwo').value;
-  let offset = document.getElementById('numberTwo').value;
-  document.getElementById('answer').innerHTML = cipher.decode(offset, string);
+  let offset = parseInt(document.getElementById('numberTwo').value);
+  document.getElementById('answerTwo').innerHTML = cipher.decode(offset, string);
 })
