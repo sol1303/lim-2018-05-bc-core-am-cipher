@@ -6,7 +6,7 @@ document.getElementById('start').addEventListener('click', () => {
   document.getElementById('ButtonCode').addEventListener('click', () => {
   let string = document.getElementById('message').value;
   let offset = parseInt(document.getElementById('number').value);
-  document.getElementById('answer').innerHTML =offset + ' - ' + cipher.encode(offset, string);
+  document.getElementById('answer').innerHTML =cipher.encode(offset, string);
 })
 
 document.getElementById('startTwo').addEventListener('click', () => {
