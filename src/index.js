@@ -10,7 +10,6 @@ document.getElementById('start').addEventListener('click', () => {
 });
 
 document.getElementById('startTwo').addEventListener('click', () => {
-  debugger
   document.getElementById('instructionsTwo').style.display= '';
   document.getElementById('start').style.display= 'none';
   document.getElementById('startTwo').style.display= 'none';
