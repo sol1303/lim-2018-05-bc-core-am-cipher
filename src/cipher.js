@@ -16,7 +16,6 @@ window.cipher = {
   },
   
   decode(offset, string) {
-    debugger
     let output = '';
     for(var i = 0; i < string.length; i++) {
     let ascii = string.charCodeAt(i);
