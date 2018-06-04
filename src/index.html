@@ -9,50 +9,44 @@
   <body class="content">
     <div id="root"></div>
     <div id="buttons">
-    <button id="start">Codificas</button>
+    <button id="start">Codificar</button>
     <button id="startTwo">Decodificar</button>
     </div>
-    <div id= "instructions" class="page" style="display: none">
-    <h2>¡Codifíca aquí!</h2>
+    <div id= "instructions" style="display: none">
+    <h2>Codificador</h2>
     <h3>Instrucciones:</h3>
     <ol>
-      <li>En <strong>Mensaje</strong> escribe el texto de desees codificar.</li>
-      <li>En <strong>Offset</strong> pondrás el número que quieras que las letras cambien.</li>
-      <li>Has click en el botón y ¡listo! <br> El número que sale al inicio seguido de un guión será el número <br>
-      que elegiste para mover las letras.</li>
-      <li>Copia y pega el mensaje codificado y mándalo a tus amigos.</li>
+      <li>En <strong>Offset</strong> pondrás el número de desees cambie el mensaje.</li>
+      <li>En <strong>Mensaje</strong> pon el mensaje que quieras codificar.</li>
+      <li>Has click en el botón y ¡listo! <br> El número que sale al inicio seguido de un guión será el Offset <br>
+      que elegiste.</li>
+      <li>Copia el mensaje codificado y mándalo a tus amigos.</li>
     </ol>
-    <p> <!--Campo de número-->
+    <p>
       <label for="number">Offset:</label>
-      <input type="number" name="number" id="number" min="0" value="0">
-    </p>
-    <p> <!---Campo de texto-->
+      <input type="number" name="number" id="number" min="0">
       <label for="textarea">Mensaje:</label>
       <input type="textarea" id="message" placeholder="Escribe tu mensaje">
+      <button id="ButtonCode">Codifícalo</button>
     </p>
-
-    <button id="ButtonCode">Codifícalo</button>
-
     <p id="answer"></p>
   </div>
   <div id= "instructionsTwo" style="display: none">
-    <h2>Bienvenid@ a Cipher Caesar</h2>
+    <h2>Decodificador</h2>
     <h3>Instrucciones:</h3>
     <ol>
-      <li>En <strong>Mensaje</strong> escribe el texto que te enviaron codificado sin guión.</li>
       <li>En <strong>Offset</strong> pondrás el número que está al inicio antes del guión sin guión.</li>
-      <li>Has click en el botón y ¡listo!</li> <br>
-      <li>Lee el mensaje decodificado y empieza denuevo.</li>
+      <li>En <strong>Mensaje</strong> se pondrá el texto que te enviaron codificado sin guión.</li>
+      <li>Has click en el botón y ¡listo!</li>
+      <li>Lee el mensaje decodificado y responde.</li>
     </ol>
-    <p> <!--Campo de número-->
+    <p>
       <label for="number">Offset:</label>
-      <input type="number" name="number" id="numberTwo" min="0" value="1">
-    </p>
-    <p> <!---Campo de texto-->
+      <input type="number" name="number" id="numberTwo" min="0">
       <label for="textarea">Mensaje:</label>
       <input type="textarea" id="messageTwo" placeholder="Escribe tu mensaje">
-    </p>
     <button id="ButtonDecode">Decodifícalo</button>
+    </p>
 
     <p id="answerTwo"></p>
   </div>

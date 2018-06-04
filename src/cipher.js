@@ -1,13 +1,10 @@
 window.cipher = {
-
   encode(offset, string) {
     let output = '';
     for(var i = 0; i < string.length; i++) {
       let ascii = string.charCodeAt(i);
       if(ascii >= 65 && ascii <= 90) {
         output += String.fromCharCode(((ascii - 65 + offset)%26) + 65);
-      } else if (ascii >= 97 && ascii <= 122){
-        output += String.fromCharCode(((ascii - 97 + offset)%26) + 97);
       } else {
         output += String.fromCharCode(ascii)
       }
@@ -24,14 +21,10 @@ window.cipher = {
         output += String.fromCharCode(91- (65 - (ascii - offset%26 )));
       }
         else {
-      output += String.fromCharCode(ascii - offset % 26);
+        output += String.fromCharCode(ascii - offset % 26);
     }
   }
   }
   return output;
 },
-
-  createCipherWithOffset () {
-
-  }
 }
