@@ -38,4 +38,8 @@ window.cipher = {
   }
 }
 return output;
-}}
+},
+createCipherWithOffset () {
+
+}
+}

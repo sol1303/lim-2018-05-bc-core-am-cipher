@@ -1,55 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0, minimum-scale=1.0, user-scalable=no">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="content">
     <div id="root"></div>
-    <div id="buttons">
-    <button id="start">Codificar</button>
-    <button id="startTwo">Decodificar</button>
-    </div>
-    <div id= "instructions" style="display: none">
+    <div class="code">
+    <button id="start" class="buttonHome">Codificar</button>
+    <section id= "instructions" style="display: none">
     <h2>Codificador</h2>
     <h3>Instrucciones:</h3>
-    <ol>
-      <li>En <strong>Offset</strong> pondrás el número de desees cambie el mensaje.</li>
-      <li>En <strong>Mensaje</strong> pon el mensaje que quieras codificar.</li>
-      <li>Has click en el botón y ¡listo! <br> El número que sale al inicio seguido de un guión será el Offset <br>
-      que elegiste.</li>
-      <li>Copia el mensaje codificado y mándalo a tus amigos.</li>
-    </ol>
+   
+      <p>1. En <strong>Offset</strong> pon un número.<br>
+      2. En <strong>Mensaje</strong> pon el mensaje que quieras codificar.<br>
+      3. Has click en el botón y ¡Listo! <br> El número que sale al inicio seguido de un guión será el Offset <br>
+      que elegiste.<br>
+      4. Copia el mensaje codificado y mándalo a tus amigos.</p>
+
     <p>
-      <label for="number">Offset:</label>
+      <label>Offset:</label>
       <input type="number" name="number" id="number" min="0">
-      <label for="textarea">Mensaje:</label>
-      <input type="textarea" id="message" placeholder="Escribe tu mensaje">
+      <label>Mensaje:</label>
+      <input type="text" id="message" placeholder="Escribe tu mensaje">
       <button id="ButtonCode">Codifícalo</button>
     </p>
     <p id="answer"></p>
-  </div>
-  <div id= "instructionsTwo" style="display: none">
+    </section></div>
+    <div class="decode">
+    <button id="startTwo" class="buttonHome">Decodificar</button>
+  <section id= "instructionsTwo" style="display: none">
     <h2>Decodificador</h2>
     <h3>Instrucciones:</h3>
-    <ol>
-      <li>En <strong>Offset</strong> pondrás el número que está al inicio antes del guión sin guión.</li>
-      <li>En <strong>Mensaje</strong> se pondrá el texto que te enviaron codificado sin guión.</li>
-      <li>Has click en el botón y ¡listo!</li>
-      <li>Lee el mensaje decodificado y responde.</li>
-    </ol>
+      <p>1. En <strong>Offset</strong> pondrás solo el número que está al inicio antes del guión.<br>
+        2. En <strong>Mensaje</strong> se pondrá el texto que te enviaron codificado.<br>
+        3. Click en el botón y ¡Listo!<br>4. Lee el mensaje decodificado y responde.</p>
     <p>
-      <label for="number">Offset:</label>
+      <label>Offset:</label>
       <input type="number" name="number" id="numberTwo" min="0">
-      <label for="textarea">Mensaje:</label>
-      <input type="textarea" id="messageTwo" placeholder="Escribe tu mensaje">
+      <label>Mensaje:</label>
+      <input type="text" id="messageTwo" placeholder="Escribe tu mensaje">
     <button id="ButtonDecode">Decodifícalo</button>
     </p>
-
     <p id="answerTwo"></p>
-  </div>
+  </section>
+</div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

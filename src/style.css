@@ -1,8 +1,94 @@
 .content {
-  background: url(image/background_index2.png);
+  background-image: url(image/background_index.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  background-color: #ffffcc;
+}
+
+.buttonHome {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 35px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.code {
+  float: left;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-right: 5px;
+  border-radius: 15px;
+
+}
+
+.decode {
+  float: right;
+  padding: 20px;
+  margin-top: 150px;
+  margin-right: 100px;
+
+}
+
+section#instructions {
+  background-color: #33ffd6;
+  padding: 30px;
+  border-radius: 15px;
+  font-family: 'Comfortaa', cursive;
+}
+
+section#instructionsTwo {
+  background-color: #ff8080;
+  padding: 30px;
+  border-radius: 15px;
+  font-family: 'Comfortaa', cursive;
+}
+
+button#start {
+margin-left: 80px;
+}
+
+button#startTwo {
+  margin-right: 80px;
+
+}
+
+button#ButtonCode {
+  background-color: #ff8080;
+  color:#000000;
+  padding: 8px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Indie Flower', cursive;
+}
+
+button#ButtonDecode {
+  background-color: #33ffd6;
+  color:#000000;
+  padding: 8px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Indie Flower', cursive;
+}
+
+p#answer {
+  font-size: 25px;
+}
+
+p#answerTwo {
+  font-size: 25px;
 }
